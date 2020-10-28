@@ -85,6 +85,7 @@
         <e p="Channel.cs" t="Include" />
         <e p="Configuration" t="Include">
           <e p="configPage.html" t="Include" />
+          <e p="ListConfig.cs" t="Include" />
           <e p="PluginConfiguration.cs" t="Include" />
         </e>
         <e p="Enums.cs" t="Include" />
@@ -109,7 +110,7 @@
         </e>
         <e p="Plugin.cs" t="Include" />
         <e p="ScheduledTasks" t="Include">
-          <e p="NewReleasesScheduledTask.cs" t="Include" />
+          <e p="ChannelUpdateScheduledTask.cs" t="Include" />
           <e p="SyncFromTraktTask.cs" t="Include" />
           <e p="SyncLibraryTask.cs" t="Include" />
         </e>

@@ -4,11 +4,20 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="952e093c-0b76-4bb3-81e6-0dbc93abf94d" name="Default Changelist" comment="" />
+    <list default="true" id="952e093c-0b76-4bb3-81e6-0dbc93abf94d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Trakt/Configuration/ListConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Trakt/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Trakt/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Trakt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Trakt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trakt/Channel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Trakt/Channel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trakt/ScheduledTasks/NewReleasesScheduledTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Trakt/ScheduledTasks/ChannelUpdateScheduledTask.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -19,11 +28,15 @@
         <option value="$PROJECT_DIR$/Trakt/Helpers/Match.cs" />
         <option value="$PROJECT_DIR$/Trakt/Api/DataContracts/ChannelMediaInfo.cs" />
         <option value="$PROJECT_DIR$/Trakt/ScheduledTasks/NewReleasesScheduledTask.cs" />
+        <option value="$PROJECT_DIR$/Trakt/Configuration/PluginConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Trakt/Configuration/ListConfig.cs" />
+        <option value="$PROJECT_DIR$/Trakt/ScheduledTasks/ChannelUpdateScheduledTask.cs" />
         <option value="$PROJECT_DIR$/Trakt/Channel.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1jTv4NHMonDhJysgaKrFbkB0B68" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603840704144</updated>
-      <workItem from="1603840711191" duration="4036000" />
+      <workItem from="1603840711191" duration="5588000" />
     </task>
     <servers />
   </component>
@@ -65,5 +78,17 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1478" y="560" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/3440.0.3440.1400/0.0.3440.1400@0.0.3440.1400" timestamp="1603841535922" />
+    <state x="1598" y="598" width="601" height="204" key="Github.ShareDialog" timestamp="1603844941903">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1598" y="598" width="601" height="204" key="Github.ShareDialog/3440.0.3440.1400/0.0.3440.1400@0.0.3440.1400" timestamp="1603844941903" />
+    <state x="1542" y="406" key="Github.UntrackedFilesDialog" timestamp="1603844952293">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1542" y="406" key="Github.UntrackedFilesDialog/3440.0.3440.1400/0.0.3440.1400@0.0.3440.1400" timestamp="1603844952293" />
+    <state x="1398" y="433" width="644" height="534" key="find.popup" timestamp="1603846425872">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1398" y="433" width="644" height="534" key="find.popup/3440.0.3440.1400/0.0.3440.1400@0.0.3440.1400" timestamp="1603846425872" />
   </component>
 </project>

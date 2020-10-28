@@ -7,11 +7,11 @@ using Trakt.Configuration;
 
 namespace Trakt.ScheduledTasks
 {
-    public class NewReleasesScheduledTask : IScheduledTask, IConfigurableScheduledTask
+    public class ChannelUpdateScheduledTask : IScheduledTask, IConfigurableScheduledTask
     {
         private ITaskManager TaskManager { get; set; }
 
-        public NewReleasesScheduledTask(ITaskManager taskMan)
+        public ChannelUpdateScheduledTask(ITaskManager taskMan)
         {
             TaskManager = taskMan;
         }
@@ -19,7 +19,7 @@ namespace Trakt.ScheduledTasks
         {
            foreach (var t in TaskManager.ScheduledTasks)
            {
-               if (t.Name == "Refresh Internet Channels")
+               if (t.Name == "Update Channel" + ListConfig.ChannelName)
                {
                    await TaskManager.Execute(t, new TaskOptions());
                }
@@ -38,9 +38,9 @@ namespace Trakt.ScheduledTasks
             };
         }
 
-        public string Name        => "New Releases Monthly Premiere Update";
-        public string Key         => "New Releases";
-        public string Description => "Increment the New Releases Minimum Premiere Date Monthly.";
+        public string Name        => ListConfig.ChannelName + "Channel";
+        public string Key         => "Update " + ListConfig.ChannelName;
+        public string Description => "Create/Update channel from trakt list.";
         public string Category    => "Library";
         public bool IsHidden      => true;
         public bool IsEnabled     => true;

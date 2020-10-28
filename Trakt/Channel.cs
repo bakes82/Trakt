@@ -19,6 +19,7 @@ using MediaBrowser.Model.Querying;
 using MediaBrowser.Model.Serialization;
 using Trakt.Api;
 using Trakt.Api.DataContracts;
+using Trakt.Configuration;
 using Trakt.Helpers;
 
 namespace Trakt
@@ -97,7 +98,7 @@ namespace Trakt
             return new List<ImageType> {ImageType.Primary, ImageType.Thumb};
         }
 
-        public string Name => "Apple TV";
+        public string Name => ListConfig.ChannelName;
         public string Description { get; private set; }
 
         public ChannelParentalRating ParentalRating => ChannelParentalRating.GeneralAudience;
@@ -147,7 +148,7 @@ namespace Trakt
             var adminUserTraktUser = UserHelper.GetTraktUser(adminUser.Id);
 
             //var listData = client.Users.GetCustomListItemsAsync("movistapp", "horror").Result;
-            var listData = await TraktApi.GetTraktUserListItems(adminUserTraktUser, "movistapp", "horror", new CancellationToken());
+            var listData = await TraktApi.GetTraktUserListItems(adminUserTraktUser, ListConfig.ListUserName, ListConfig.ListName, new CancellationToken());
             
             Logger.Info($"Count of items on list {listData.Count}");
             //_logger.Info(_jsonSerializer.SerializeToString(data));
